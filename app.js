@@ -1,2 +1,11 @@
-import {getMe} from "./auth.js"
+import {getMe, login, register} from "./auth.js"
 getMe()
+let loginBtn = document.querySelector('#login-btn');
+let registerBtn = document.querySelector('#register-btn');
+
+loginBtn.addEventListener('click',e => {
+    login()
+})
+registerBtn.addEventListener('click',e => {
+    register()
+})
