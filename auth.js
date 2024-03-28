@@ -9,3 +9,8 @@ const getMe = (userToken) => {
 
     console.log('Your Data IS => ', userToken);
 }
+const login = (userData) => {
+  if (!userData.password) return false
+
+  console.log(`Your Login Was SuccessFully.`)
+}
