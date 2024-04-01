@@ -1,7 +1,8 @@
 import {getMe, login, register} from "./auth.js"
 import { hideLoader, showLoader } from "./utils.js";
 import { 
-    renderCourses
+    renderCourses,
+    renderArticles
  } from "./shared.js";
 getMe()
 let loginBtn = document.querySelector('#login-btn');
@@ -20,5 +21,6 @@ registerBtn.addEventListener('click',e => {
 
 window.addEventListener('load', () => {
     renderCourses()
+    renderArticles()
     hideLoader()
 })
