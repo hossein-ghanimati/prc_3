@@ -1,4 +1,8 @@
-import { getCourses, getArticles } from "./utils.js";
+import { 
+    getCourses,
+    getArticles,
+    getPopularCourses
+     } from "./utils.js";
 
 const renderCourses = () => {
     const courses = getCourses()
@@ -9,7 +13,13 @@ const renderArticles = () => {
     console.log(articles)
 }
 
+const renderPopularCourses = () => {
+    let popularCourses = getPopularCourses()
+    console.log("Render Popular Courses => ", popularCourses);
+}
+
 export{
     renderCourses,
-    renderArticles
+    renderArticles,
+    renderPopularCourses
 }
