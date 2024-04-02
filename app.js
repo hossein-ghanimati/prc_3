@@ -3,6 +3,8 @@ import { hideLoader, showLoader } from "./utils.js";
 import { 
     renderCourses,
     renderArticles,
+    renderPopularCourses,
+    renderPopularCourses,
     renderPopularArticles
  } from "./shared.js";
 getMe()
@@ -23,6 +25,8 @@ registerBtn.addEventListener('click',e => {
 window.addEventListener('load', () => {
     renderCourses()
     renderArticles()
+    renderPopularCourses()
     renderPopularArticles(); 
+
     hideLoader()
 })
