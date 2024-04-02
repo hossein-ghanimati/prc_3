@@ -21,7 +21,16 @@ const getArticles = () => {
     ]
 }
 
+
 const getPopularCourses  = () => {
+  return [
+        {_id : 1, name : "Canvas"},
+        {_id : 2, name : "HTML"},
+        {_id : 3, name : "CSS"}
+    ]
+}
+const getPopularArticles = () => {
+
     return [
         {_id : 1, name : "Canvas"},
         {_id : 2, name : "HTML"},
@@ -34,5 +43,7 @@ export {
     showLoader,   
     getCourses,
     getArticles,
-    getPopularCourses
+    getPopularCourses,
+    getPopularArticles,
+
 }
