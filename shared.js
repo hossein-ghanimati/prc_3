@@ -3,9 +3,10 @@ import {
     renderPopularCourses,
     getArticles,
     getPopularCourses,
-     getArticles,
-     getPopularArticles
-     } from "./utils.js";
+    getArticles,
+    getPopularArticles,
+    getNotifications
+} from "./utils.js";
 
 const renderCourses = () => {
     const courses = getCourses()
@@ -26,10 +27,16 @@ const renderPopularCourses = () => {
     console.log("Render Popular Courses => ", popularCourses);
 }
 
+const renderNotifications = () => {
+    const notifications = getNotifications();
+    console.log("Render Notifications => ", notifications);
+}
+
 export{
     renderCourses,
     renderArticles,
     renderPopularCourses,
     renderPopularCourses,
-    renderPopularArticles
+    renderPopularArticles,
+    renderNotifications
 }
