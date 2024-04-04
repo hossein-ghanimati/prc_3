@@ -38,6 +38,14 @@ const getPopularArticles = () => {
     ]
 }
 
+const getNotifications = () => {
+    return [
+        {_id : 1, name : "Notification_1"},
+        {_id : 2, name : "Notification_2"},
+        {_id : 3, name : "Notification_3"}
+    ]
+}
+
 export {
     hideLoader,
     showLoader,   
@@ -45,5 +53,5 @@ export {
     getArticles,
     getPopularCourses,
     getPopularArticles,
-
+    getNotifications
 }
