@@ -5,7 +5,8 @@ import {
     renderArticles,
     renderPopularCourses,
     renderPopularCourses,
-    renderPopularArticles
+    renderPopularArticles,
+    renderNotifications
  } from "./shared.js";
 getMe()
 let loginBtn = document.querySelector('#login-btn');
@@ -27,6 +28,6 @@ window.addEventListener('load', () => {
     renderArticles()
     renderPopularCourses()
     renderPopularArticles(); 
-
+    renderNotifications();
     hideLoader()
 })
