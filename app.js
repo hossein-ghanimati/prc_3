@@ -6,11 +6,13 @@ import {
     renderPopularCourses,
     renderPopularCourses,
     renderPopularArticles,
-    renderNotifications
- } from "./shared.js";
+    renderNotifications,
+    uploadCourse
+} from "./shared.js";
 getMe()
 let loginBtn = document.querySelector('#login-btn');
 let registerBtn = document.querySelector('#register-btn');
+let uploadCourseBtn = document.querySelector('#upload-course-btn');
 
 loginBtn.addEventListener('click',e => {
     showLoader();
@@ -21,6 +23,10 @@ registerBtn.addEventListener('click',e => {
     showLoader();
     register()
     hideLoader()
+})
+
+uploadCourseBtn.addEventListener('click',e => {
+    uploadCourse();
 })
 
 window.addEventListener('load', () => {
