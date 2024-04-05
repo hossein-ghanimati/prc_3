@@ -33,9 +33,9 @@ uploadCourseBtn.addEventListener('click',e => {
     hideLoader()
 })
 uploadArticleBtn.addEventListener('click',e => {
-    // showLoader();
+    showLoader();
     uploadArticle()
-    // hideLoader()
+    hideLoader()
 })
 
 window.addEventListener('load', () => {
