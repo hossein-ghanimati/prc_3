@@ -46,6 +46,13 @@ const getNotifications = () => {
     ]
 }
 
+const createCourseData = () => {
+    return {
+        _id : 10,
+        name : "React"
+    }
+}
+
 export {
     hideLoader,
     showLoader,   
@@ -53,5 +60,6 @@ export {
     getArticles,
     getPopularCourses,
     getPopularArticles,
-    getNotifications
+    getNotifications,
+    createCourseData
 }
