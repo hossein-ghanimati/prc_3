@@ -46,6 +46,13 @@ const getNotifications = () => {
     ]
 }
 
+const sendCourseData = data => {
+    return {
+        msg : "Data Sent Successfully",
+        status : 201
+    }
+}
+
 export {
     hideLoader,
     showLoader,   
@@ -53,5 +60,6 @@ export {
     getArticles,
     getPopularCourses,
     getPopularArticles,
-    getNotifications
+    getNotifications,
+    sendCourseData
 }
