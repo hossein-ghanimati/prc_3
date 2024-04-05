@@ -5,7 +5,9 @@ import {
     getPopularCourses,
     getArticles,
     getPopularArticles,
-    getNotifications
+    getNotifications,
+    createCourseData,
+    sendCourseData,
 } from "./utils.js";
 
 const renderCourses = () => {
@@ -32,11 +34,21 @@ const renderNotifications = () => {
     console.log("Render Notifications => ", notifications);
 }
 
+const uploadCourse = () => {
+    const courseData = createCourseData();
+    const sendReq = sendCourseData(courseData);
+
+    if (sendReq.status == 201) {
+        console.log("Uploading Course Was Successful");
+    }
+}
+
 export{
     renderCourses,
     renderArticles,
     renderPopularCourses,
     renderPopularCourses,
     renderPopularArticles,
-    renderNotifications
+    renderNotifications,
+    uploadCourse
 }
