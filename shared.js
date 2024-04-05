@@ -8,6 +8,8 @@ import {
     getNotifications,
     createCourseData,
     sendCourseData,
+    createArticleData,
+    sendArticleData
 } from "./utils.js";
 
 const renderCourses = () => {
@@ -43,6 +45,15 @@ const uploadCourse = () => {
     }
 }
 
+const uploadArticle = () => {
+    const articleData = createArticleData();
+    const sendReq = sendArticleData(articleData);
+
+    if (sendReq.status == 201) {
+        console.log("Uploading Article Was Successful");
+    }
+}
+
 export{
     renderCourses,
     renderArticles,
@@ -50,5 +61,6 @@ export{
     renderPopularCourses,
     renderPopularArticles,
     renderNotifications,
-    uploadCourse
+    uploadCourse,
+    uploadArticle
 }
