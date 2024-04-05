@@ -26,7 +26,9 @@ registerBtn.addEventListener('click',e => {
 })
 
 uploadCourseBtn.addEventListener('click',e => {
-    uploadCourse();
+    showLoader();
+    uploadCourse()
+    hideLoader()
 })
 
 window.addEventListener('load', () => {
