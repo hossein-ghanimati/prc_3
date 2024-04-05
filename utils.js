@@ -52,6 +52,12 @@ const createCourseData = () => {
         name : "React"
     }
 }
+const sendCourseData = data => {
+    return {
+        msg : "Data Sent Successfully",
+        status : 201
+    }
+}
 
 export {
     hideLoader,
@@ -61,5 +67,6 @@ export {
     getPopularCourses,
     getPopularArticles,
     getNotifications,
-    createCourseData
+    createCourseData,
+    sendCourseData
 }
