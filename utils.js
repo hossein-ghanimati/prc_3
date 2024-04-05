@@ -59,13 +59,6 @@ const sendCourseData = data => {
     }
 }
 
-const createArticleData = () => {
-    return {
-        _id : 10,
-        name : "React-vs-Vue"
-    }
-}
-
 export {
     hideLoader,
     showLoader,   
@@ -75,6 +68,5 @@ export {
     getPopularArticles,
     getNotifications,
     createCourseData,
-    sendCourseData,
-    createArticleData
+    sendCourseData
 }
